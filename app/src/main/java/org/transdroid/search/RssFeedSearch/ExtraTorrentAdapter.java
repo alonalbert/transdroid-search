@@ -120,13 +120,4 @@ public class ExtraTorrentAdapter extends RssFeedSearchAdapter {
 	public String getSiteName() {
 		return "ExtraTorrent";
 	}
-
-	public AuthType getAuthType() {
-		return AuthType.NONE;
-	}
-
-	public String[] getRequiredCookies() {
-		return null;
-	}
-
 }

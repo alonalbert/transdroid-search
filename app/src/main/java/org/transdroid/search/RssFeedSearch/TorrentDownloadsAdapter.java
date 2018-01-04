@@ -110,13 +110,4 @@ public class TorrentDownloadsAdapter extends RssFeedSearchAdapter {
 	public String getSiteName() {
 		return "Torrent Downloads";
 	}
-
-	public AuthType getAuthType() {
-		return AuthType.NONE;
-	}
-
-	public String[] getRequiredCookies() {
-		return null;
-	}
-
 }

@@ -93,10 +93,6 @@ public class HdTorrentsAdapter implements ISearchAdapter {
         return AuthType.USERNAME;
     }
 
-    public String[] getRequiredCookies() {
-        return null;
-    }
-
     @Override
     public List<SearchResult> search(SharedPreferences prefs, String query, SortOrder order, int maxResults) throws Exception {
 

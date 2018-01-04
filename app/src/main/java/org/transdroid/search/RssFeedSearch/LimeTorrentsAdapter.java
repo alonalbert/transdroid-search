@@ -117,13 +117,4 @@ public class LimeTorrentsAdapter extends RssFeedSearchAdapter {
 	public String getSiteName() {
 		return "LimeTorrents";
 	}
-
-	public AuthType getAuthType() {
-		return AuthType.NONE;
-	}
-
-	public String[] getRequiredCookies() {
-		return null;
-	}
-
 }

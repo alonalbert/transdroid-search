@@ -160,13 +160,4 @@ public class SkyTorrentsAdapter extends RssFeedSearchAdapter {
   public String getSiteName() {
     return "Sky Torrents";
   }
-
-  public AuthType getAuthType() {
-    return AuthType.NONE;
-  }
-
-  public String[] getRequiredCookies() {
-    return null;
-  }
-
 }

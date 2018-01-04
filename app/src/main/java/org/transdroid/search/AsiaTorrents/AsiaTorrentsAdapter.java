@@ -246,9 +246,4 @@ public class AsiaTorrentsAdapter implements ISearchAdapter {
 	public AuthType getAuthType() {
 		return AuthType.USERNAME;
 	}
-
-	public String[] getRequiredCookies() {
-		return null;
-	}
-
 }

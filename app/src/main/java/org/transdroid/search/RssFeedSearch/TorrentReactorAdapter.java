@@ -70,13 +70,4 @@ public class TorrentReactorAdapter extends RssFeedSearchAdapter {
 	public String getSiteName() {
 		return "TorrentReactor";
 	}
-
-	public AuthType getAuthType() {
-		return AuthType.NONE;
-	}
-
-	public String[] getRequiredCookies() {
-		return null;
-	}
-
 }

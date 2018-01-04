@@ -66,7 +66,9 @@ public interface ISearchAdapter {
 	 * Implementing search provider should return what authentication system it uses.
 	 * @return Type of authentication or NONE if public site.
 	 */
-	AuthType getAuthType();
+	default AuthType getAuthType() {
+		return AuthType.NONE;
+	};
 
 
 	/**
@@ -74,7 +76,9 @@ public interface ISearchAdapter {
 	 * it requires.
 	 * @return An array of cookie names or null if not a using Cookie authentication.
 	 */
-	String[] getRequiredCookies();
+	default String[] getRequiredCookies() {
+		return null;
+	}
 
 	/**
 	 * Implement search providers should set up an HTTP request for the specified torrent file uri and, possibly after

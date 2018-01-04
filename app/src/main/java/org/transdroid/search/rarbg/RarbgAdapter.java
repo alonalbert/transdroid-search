@@ -42,14 +42,6 @@ public class RarbgAdapter implements ISearchAdapter {
 		return "RARBG";
 	}
 
-	public AuthType getAuthType() {
-		return AuthType.NONE;
-	}
-
-	public String[] getRequiredCookies() {
-		return null;
-	}
-
 	@Override
 	public List<SearchResult> search(SharedPreferences prefs, String query, SortOrder order, int maxResults) throws Exception {
 

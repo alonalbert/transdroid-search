@@ -129,17 +129,8 @@ public class YtsAdapter implements ISearchAdapter {
         return "YTS (proxied)";
     }
 
-    public AuthType getAuthType() {
-        return AuthType.NONE;
-    }
-
-    public String[] getRequiredCookies() {
-        return null;
-    }
-
     @Override
     public InputStream getTorrentFile(SharedPreferences prefs, String url) throws Exception {
         return null;
     }
-
 }
