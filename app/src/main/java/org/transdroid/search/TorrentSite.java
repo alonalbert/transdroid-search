@@ -20,6 +20,7 @@ package org.transdroid.search;
 
 import android.content.SharedPreferences;
 
+import org.transdroid.search.adapters.html.privatetrackers.TorrentingAdapter;
 import org.transdroid.search.adapters.privatetrackers.AsiaTorrentsAdapter;
 import org.transdroid.search.adapters.privatetrackers.BTNAdapter;
 import org.transdroid.search.adapters.privatetrackers.BitHdtvAdapter;
@@ -182,7 +183,14 @@ public enum TorrentSite {
 		public ISearchAdapter getAdapter() {
 			return new TorrentLeechAdapter();
 		}
-	};
+	},
+	Torrenting{
+		@Override
+		public ISearchAdapter getAdapter() {
+			return new TorrentingAdapter();
+		}
+	},
+	;
 
 	/**
 	 * Directly and synchronously perform the search for torrents matching the given query string.
